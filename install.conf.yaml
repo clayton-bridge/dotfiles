@@ -8,6 +8,9 @@
     ~/.config/fish/config.fish:
         create: true
         path: ~/.dotfiles/config.fish
+    ~/.gitconfig:
+        creat: true
+        path: ~/.dotfiles/gitconfig
 
 # - create:
 #     - ~/.vim/undo-history

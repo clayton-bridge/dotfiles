@@ -1,0 +1,11 @@
+[user "gitlab.wellfound.co/wellfound"]
+        name = Clayton Bridge
+        email = clayton.bridge@wellfound.co
+
+[user "gitlab.wellfound.co/qorvo"]
+        name = Clayton Bridge
+        email = clayton.bridge@qorvo.com
+[commit]
+        gpgsign = false
+[core]
+        editor = ne
