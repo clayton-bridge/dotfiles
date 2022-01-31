@@ -17,3 +17,7 @@
 
 - shell:
   - gitname
+  - 
+    command: ./gitconfig-gitpod.sh
+    stderr: true
+    stdout: true
