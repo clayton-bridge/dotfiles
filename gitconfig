@@ -2,6 +2,10 @@
         name = Clayton Bridge
         email = clayton.bridge@wellfound.co
 
+[user "github.com/clayton-bridge"]
+        name = Clayton Bridge
+        email = clayton.bridge@wellfound.co
+
 [user "gitlab.wellfound.co/qorvo"]
         name = Clayton Bridge
         email = clayton.bridge@qorvo.com
