@@ -5,10 +5,11 @@
 - clean: ['~']
 
 - link:
-    ~/.config/fish/config.fish: ~/.dotfiles/config.fish
+    ~/.config/fish/config.fish:
+        create: true
+        path: ~/.dotfiles/config.fish
 
 # - create:
-#     - ~/downloads
 #     - ~/.vim/undo-history
 
 # - shell:
