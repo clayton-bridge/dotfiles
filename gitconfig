@@ -1,15 +1,18 @@
 [user "gitlab.wellfound.co/wellfound"]
         name = Clayton Bridge
         email = clayton.bridge@wellfound.co
+        signingkey = B7084D04339211AD
 
 [user "github.com/clayton-bridge"]
         name = Clayton Bridge
         email = clayton.bridge@wellfound.co
+        signingkey = B7084D04339211AD
 
 [user "gitlab.wellfound.co/qorvo"]
         name = Clayton Bridge
         email = clayton.bridge@qorvo.com
+        signingkey = 0185FF481CA9AADF
 [commit]
-        gpgsign = false
+        gpgsign = true
 [core]
         editor = ne
