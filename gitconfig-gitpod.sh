@@ -2,7 +2,7 @@
 
 set -eu;
 
-if test ! -e /ide/bin/gp-code || test ! -v GITPOD_REPO_ROOT; then {
+if test ! -e /ide/bin/remote-cli/gp-code || test ! -v GITPOD_REPO_ROOT; then {
     printf 'gitconfig-gitpod.sh: This script is meant to be run on Gitpod, quitting...\n' && exit 0;
 } fi
 
