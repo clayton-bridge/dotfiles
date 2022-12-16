@@ -32,3 +32,5 @@
         gpgsign = true
 [core]
         editor = ne
+[init]
+	templateDir = /Users/cb037304-admin/.git-templates
