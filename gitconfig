@@ -3,6 +3,11 @@
         email = clayton.bridge@wellfound.co
         signingkey = B7084D04339211AD
 
+[user "gitlab.com"]
+        name = Clayton Bridge
+        email = clayton.bridge@wellfound.co
+        signingkey = B7084D04339211AD
+
 [user "github.com/clayton-bridge"]
         name = Clayton Bridge
         email = clayton.bridge@wellfound.co
