@@ -27,3 +27,6 @@ set -g fish_color_valid_path --underline
 
 # Initialize Starship
 starship init fish | source
+
+# Add Flutter to PATH
+set PATH /Users/cb037304-admin/dev/flutter/bin $PATH
