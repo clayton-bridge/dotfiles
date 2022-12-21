@@ -9,9 +9,7 @@
         create: true
         path: fish/config.fish
         force: true
-#    ~/.gitconfig:
-#        creat: true
-#        path: ~/.dotfiles/git/gitconfig
-
-- shell:
-  - gitname
+    ~/.gitconfig:
+        create: true
+        path: git/gitconfig
+        force: true
