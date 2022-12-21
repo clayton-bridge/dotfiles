@@ -7,17 +7,11 @@
 - link:
     ~/.config/fish/config.fish:
         create: true
-        path: ~/.dotfiles/config.fish
-    ~/.gitconfig:
-        creat: true
-        path: ~/.dotfiles/gitconfig
-
-# - create:
-#     - ~/.vim/undo-history
+        path: fish/config.fish
+        force: true
+#    ~/.gitconfig:
+#        creat: true
+#        path: ~/.dotfiles/git/gitconfig
 
 - shell:
   - gitname
-  - 
-    command: ./gitconfig-gitpod.sh
-    stderr: true
-    stdout: true
