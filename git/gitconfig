@@ -28,6 +28,11 @@
         email = clayton.bridge@qorvo.com
         signingkey = 0185FF481CA9AADF
 
+[user "github.com/stackfound"]
+        name = Clayton Bridge
+        email = clayton@stackfound.com
+        signingkey = F4D58CC37D1F95AC
+
 [commit]
         gpgsign = true
 [core]
