@@ -13,3 +13,10 @@
         create: true
         path: git/gitconfig
         force: true
+    # Claude Code house skills — cross-repo doctrine, versioned here so it survives a machine
+    # rebuild. ONE LINK PER SKILL, deliberately: ~/.claude/skills also holds plugin-installed
+    # and machine-local skills, so linking the whole directory would clobber them.
+    ~/.claude/skills/house-ui-debugging:
+        create: true
+        path: claude/skills/house-ui-debugging
+        force: true

@@ -29,4 +29,10 @@ set -g fish_color_valid_path --underline
 starship init fish | source
 
 # Add Flutter to PATH
-set PATH /Users/cb037304-admin/dev/flutter/bin $PATH
+
+# Added by `rbenv init` on Tue Mar 25 11:18:55 CDT 2025
+status --is-interactive; and rbenv init - --no-rehash fish | source
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/claytonbridge/google-cloud-sdk/path.fish.inc' ]; . '/Users/claytonbridge/google-cloud-sdk/path.fish.inc'; end
+export PATH="$HOME/.local/bin:$PATH"

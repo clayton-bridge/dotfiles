@@ -5,13 +5,23 @@
 
 [user "gitlab.com"]
         name = Clayton Bridge
-        email = clayton.bridge@wellfound.co
-        signingkey = B7084D04339211AD
+        email = clayton@fellos.com
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGAtPB2Gf/zEeVtvVHUPdLHUdNbcpgJZJixFezb4/gMF
+
+[user "gitlab.com/stackfound/fellos1"]
+        name = Clayton Bridge
+        email = clayton@fellos.com
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGAtPB2Gf/zEeVtvVHUPdLHUdNbcpgJZJixFezb4/gMF
 
 [user "github.com/clayton-bridge"]
         name = Clayton Bridge
-        email = clayton.bridge@wellfound.co
-        signingkey = B7084D04339211AD
+        email = clayton@fellos.com
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILTZn1tJUtc+beb2YtW+f62ILZynJRcVXYkSNiM8nJyM
+
+[user "github.com/FellosHQ"]
+        name = Clayton Bridge
+        email = clayton@fellos.com
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILTZn1tJUtc+beb2YtW+f62ILZynJRcVXYkSNiM8nJyM
 
 [user "gitlab.wellfound.co/qorvo"]
         name = Clayton Bridge
@@ -33,9 +43,40 @@
         email = clayton@stackfound.com
         signingkey = F4D58CC37D1F95AC
 
+[user "gitlab.com/stackfound"]
+        name = Clayton Bridge
+        email = clayton@stackfound.com
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGAtPB2Gf/zEeVtvVHUPdLHUdNbcpgJZJixFezb4/gMF
+
+[user "github.com/colorgrid"]
+        name = Clayton Bridge
+        email = clayton@colorgrid.com
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH872fx/r6G+i7d/tndUYe5HUccdFaCyR7rfnviGzr+8
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+	allowedSignersFile = /Users/claytonbridge/.config/git/allowed_signers
+
 [commit]
-        gpgsign = true
+  gpgsign = true
+
 [core]
         editor = ne
-[init]
-	templateDir = /Users/cb037304-admin/.git-templates
+	excludesfile = /Users/claytonbridge/.gitignore_global
+	hooksPath = /Users/claytonbridge/.config/git/hooks
+[user]
+	useConfigOnly = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
